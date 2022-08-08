@@ -6,9 +6,38 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="style.css" class="css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <div class="feedbackCard">
+      <img class="starIcon" src="./images/icon-star.svg" alt="star icon">
+      <h1>How did we do?</h1>
+      <p class="feedbackInstruction">Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+      <ul>
+        <li role="list" class="numberRatings">1</li>
+        <li role="list" class="numberRatings">2</li>
+        <li role="list" class="numberRatings">3</li>
+        <li role="list" class="numberRatings">4</li>
+        <li role="list" class="numberRatings">5</li>
+      </ul>
+      <button>Submit</button>
+    </div>
+    <div class="thankyouCard">
+      <img src="./images/illustration-thank-you.svg" alt="Thankyou icon">
+      <h3>You selected 4 out of 5</h3>
+      <h2>Thank you!</h2>
+      <p class="thankyouMessage">We appreciate you taking the time to give a rating.
+        If you ever need more support, dont hesitate to get in touch.
+      </p>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
 </html>
+
