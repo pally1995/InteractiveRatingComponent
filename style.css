@@ -91,7 +91,31 @@ h1 {
     color: hsl(0, 0%, 100%);
 }
 
+.ratingBtn {
+    height: 2rem;
+    width: 2rem;
+    background: hsl(213, 19%, 25%);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 1rem;
+    border: none;
+    color: white;
+}
 
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background: hsl(25, 97%, 53%);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 20px;
+    margin: 1.5rem auto;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
 
 
 .thankyouCard {
