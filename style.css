@@ -48,7 +48,8 @@ table {
 body {
     background: hsl(216, 12%, 8%);
     font-size: 15px;
-    font-family: 'Overpass', sans-serif;;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 
 .container {
@@ -77,7 +78,7 @@ body {
 }
 
 h1 {
-    color: hsl(0, 0%, 100%);
+    color: hsl(217, 12%, 63%);
     font-size: 1.5rem;
     margin: 0.5rem 0 1rem 1rem;
     font-weight: 700;
@@ -88,20 +89,33 @@ h1 {
     font-weight: 400;
     margin: 0 1rem 1rem 1rem;
     line-height: 1.2rem;
-    color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 54%);
+}
+
+#rating1, #rating2, #rating3, #rating4, #rating5 {
+    display: none;
 }
 
 .ratingBtn {
-    height: 2rem;
-    width: 2rem;
+    height: 2.2rem;
+    width: 2.2rem;
     background: hsl(213, 19%, 25%);
     padding: 0.5em;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 0.75rem;
     border: none;
+    color: hsl(217, 12%, 63%);
+}
+
+.ratingBtn:hover {
+    background:hsl(25, 97%, 53%);
+    cursor: pointer;
     color: white;
 }
 
+.ratingBtn:checked {
+    background:hsl(216, 12%, 54%);
+}
 .submitBtn {
     display: flex;
     justify-content: center;
@@ -112,13 +126,64 @@ h1 {
     border-radius: 20px;
     margin: 1.5rem auto;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 
+.submitBtn:hover {
+    cursor: pointer;
+    background: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%)
+}
 
 .thankyouCard {
-    display: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
+    background: hsl(213, 19%, 18%);
 }
  
+img {
+    width: 40%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+h3 {
+    background: hsl(213, 19%, 25%);
+    padding: 0.5rem;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 15px;
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+
+}
+
+h2 {
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.thankyouMessage {
+    color: hsl(216, 12%, 54%);
+    margin: 0 1.3rem 1.3rem 1.3rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+@media only screen and (min-width: 1440px){
+    .thankyouCard, .feedbackCard {
+        width: 25vw;
+    }
+
+        .ratingBtn {
+            margin: 0.85rem;
+        }
+}
