@@ -96,6 +96,11 @@ h1 {
     display: none;
 }
 
+.radioBtn {
+    Display: flex;
+    Flex-direction: row;
+}
+
 label.rating {
     text-align: center;
     vertical-align: middle;
