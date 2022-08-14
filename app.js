@@ -16,8 +16,6 @@ submitBtn.addEventListener("click", () => {
       feedbackCard.style.display = "none";
       break;
     } else {
-      feedbackCard.style.display = "block";
-      thankyouCard.style.display = "none";
     }
   }
 });

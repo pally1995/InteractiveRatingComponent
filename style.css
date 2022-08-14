@@ -115,10 +115,10 @@ label.rating:hover {
     color: white;
 }
 
-label.rating:checked {
-    background:hsl(25, 97%, 53%);
-    cursor: pointer;
+input[type=radio]:checked + label {
+    background: hsl(25, 97%, 53%);
     color: white;
+    cursor: pointer;
 }
 
 .submitBtn {
